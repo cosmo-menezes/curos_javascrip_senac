@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores comparativos</title>
+</head>
+<body>
+    <h1>Operadores comparativos</h1>
+    <p id="teste1">O valor de a é: </p>
+    <p id="teste2">O valor de b é: </p>
+    <p id="teste3">O valor de c é: </p>
+    <p id="teste4">O valor de d é: </p>
+    <p id="teste5">O valor de e é: </p>
+    <p id="teste6">O valor de f é: </p>
+
+    <script type="text/javascript">
+        // Criação de variáveis
+
+        var a = 1;
+        var b = 1;
+        var c = '1';
+        var d = 2
+        var e = true + 1;
+        var f = "senac"
+
+        document.getElementById('teste1').innerHTML += a == b; // o sinal (==) siginifica igual
+        document.getElementById('teste2').innerHTML += a === c; // o sinal (===) siginifica exatidão
+        document.getElementById('teste3').innerHTML += a === b;
+        document.getElementById('teste4').innerHTML += a >= b;
+        document.getElementById('teste5').innerHTML += a >= d;
+        document.getElementById('teste6').innerHTML += a <= c;
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto em Javascript</title>
+</head>
+<body>
+    <h1>Objeto em javascript</h1>
+
+    <script type="text/javascript">
+        // Criando o objeto
+        var pessoa = {
+            nome: 'Joaquim',
+            sobrenome: 'da Silva',
+            idade: 30,
+            olhos: 'castanhos',
+            peso: 80,
+            altura: 1.80,
+            fone: '(11)91234-5678',
+            endereco: 'Avenida Paulistano',
+            numero: '1010',
+            bairro: 'Jardim Paulistano',
+            cidade: 'São Paulo',
+            estado: 'SP',
+            cep: '03110-100',
+            nomeCompleto: function(){
+                return this.nome + ' ' + this.sobrenome;
+            },
+
+            endCompleto: function(){
+                return this.endereco + ', ' + 
+                            this.numero + '<br>' +
+                            this.bairro + '<br>' +
+                            this.cidade + ' - ' +
+                            this.estado + '<br>' +
+                            this.cep;
+            }
+        }
+
+
+        // Mostrando os dados de um objeto
+        document.write(pessoa.nomeCompleto() + '<br>');
+        document.write(pessoa.endCompleto());
+    </script> 
+</body>
+</html>

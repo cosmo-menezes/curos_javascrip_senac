@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de DOM</title>
+</head>
+<body>
+    <h1>Exemplo de DOM</h1>
+    <p>Escolha a cor da página</p>
+    <ul>
+        <li><a href="javascript:Verde()">Verde</a></li>
+        <li><a href="javascript:Amarelo()">Amarelo</a></li>
+        <li><a href="javascript:Azul()">Azul</a></li>
+        <li><a href="javascript:Branco()">Branco</a></li>
+    </ul>
+
+    <script type="text/javascript">
+        // Declarando a função Verde
+        function Verde(){
+            var meuVerde = '';
+            meuVerde.document.creatElement('link');
+            meuVerde.setAttribute('rel', 'stylesheet');
+            meuVerde.setAttribute('type','text/css');
+            meuVerde.setAttribute('href', 'verde.css');
+            document.head.appendChild(meuVerde);
+        }
+
+        // Declarando a função Amarelo
+        function Amarelo(){
+            // Criando a variável
+            var meuAmarelo = '';
+            meuAmarelo = document.createElement('link');
+            meuAmarelo.setAttribute('rel', 'stylesheet');
+            meuAmarelo.setAttribute('type', 'text/css');
+            meuAmarelo.setAttribute('href', 'amarelo.css');
+            document.head.appendChild(meuAmarelo);
+        }
+
+        // Declarando a função Azul
+        function Azul(){
+            // Criando a variável
+            var meuAzul = '';
+            meuAzul = document.createElement('link');
+            meuAzul.setAttribute('rel', 'stylesheet');
+            meuAzul.setAttribute('type', 'text/css');
+            meuAzul.setAttribute('href', 'azul.css');
+            document.head.appendChild(meuAzul);
+        }
+
+        // Declarando a função Branco
+        var meuBranco = '';
+        meuBranco = document.createElement('link');
+        meuBranco.setAttribute('rel', 'stylesheet');
+        meuBranco.setAttribute('type', 'text/css');
+        meuBranco.head.appendChild(meuBranco);
+    </script>
+</body>
+</html>

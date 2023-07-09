@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de DOM - Document Object Model</title>
+    <style type="text/css">
+        #caixa{
+            background-color: #dcdcdc;
+            width: 50%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main id="principal">
+        <h1>Exemplo de DOM</h1>
+        <br>
+        <button type="button" onclick="chamaDOM()">Clique</button>
+    </main>
+    <script type="text/javascript">
+        // Criando a função 
+        function chamaDOM(){
+            // Chamando variáveis
+            var tela = '', novaCaixa = '';
+
+            // Obtendo os elementos
+            tela = document.getElementById('principal');
+            novaCaixa = document.getElementById('caixa');
+
+            // Criando um novo CSS
+            tela.style.fontFamily = 'Arial, sans-serif';
+            tela.style.textAlign = 'center';
+            tela.style.backgroundColor = '#FFFACD';
+            tela.style.padding = '20px';
+            tela.style.width = '40%';
+            tela.style.margin = '0px auto';
+            tela.style.border = '1px solid #CCC';
+            tela.style.borderRadius = '20px';
+
+            novaCaixa.style.backgroundColor = '#CD853F1';
+            novaCaixa.style.padding = '30px';
+            novaCaixa.style.color = '#FFF';
+            novaCaixa.style.width = '300px';
+            novaCaixa.style.margin = '0px auto';
+            novaCaixa.style.textAlign = 'center';
+        }
+    </script>
+</body>
+</html>

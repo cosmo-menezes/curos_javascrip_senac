@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de vetor</title>
+</head>
+<body>
+    <h1>Exemplo de vetor</h1>
+    <p id="teste1">Quantidade de itens do vetor: </p>
+    <p id="teste2">Primeiro item do vetor: </p>
+    <p id="teste3">Último item do vetor: </p>
+
+    <script type="text/javascript">
+        // Criando o vetor
+
+        var cores = ['Verde', 'Amarelo', 'Azul', 'Branco'];
+
+        // Mostrando o resultado
+        document.getElementById('teste1').innerHTML += cores.length;
+        document.getElementById('teste2').innerHTML += cores[0];
+        document.getElementById('teste3').innerHTML += cores[cores.length -1];
+    </script>
+</body>
+</html>

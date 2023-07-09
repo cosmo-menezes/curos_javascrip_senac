@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função sem parâmetro</title>
+</head>
+<body>
+    <h1>Função sem parâmetro</h1>
+    <p id="teste"></p>
+
+    <button type="button" onclick="mostraTexto();">Mostra</button>
+
+    <script type="text/javascript">
+        // Declarando uma função
+        function mostraTexto(){
+            // Declarando as variáveis
+            var texto = 'Linguagem Javascript <br>';
+            var media = (2+5+8)/3 + '<br>';
+            var resposta = true;
+
+            // Mostrando a função
+            document.getElementById('teste').innerHTML = texto + media + resposta;
+        }
+    </script>
+</body>
+</html>

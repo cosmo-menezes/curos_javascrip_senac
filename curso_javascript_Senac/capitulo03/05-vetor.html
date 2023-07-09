@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de vetor</title>
+</head>
+<body>
+    <h1>Exemplo de vetor</h1>
+    <h3>Adiciona um ou mais elementos no início de um vetor</h3>
+    <h4>O UNSHIFT adiciona elementos no início de um vetor</h4>
+    <p id="teste1">Vetor sem unshift: </p>
+    <p id="teste2">Vetor com unshift: </p>
+
+    <script type="text/javascript">
+        // Criando um vetor
+        var vetor = [2,3,4,5];
+        
+
+        // Mostrando o vetor on ID chamado 'teste1';
+        document.getElementById('teste1').innerHTML += vetor;
+        
+
+        // Adicionando elementos no início do vetor
+        vetor.unshift(0,1);
+        
+        // Mostrando novamente o vetor, agora com os elementos adicionados no início.
+        document.getElementById('teste2').innerHTML += vetor;
+        
+
+    </script>
+</body>
+</html>

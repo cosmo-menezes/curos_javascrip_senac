@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Função sem parâmetro</title>
+</head>
+<body>
+    <h1>Exemplo de Função sem parâmetro</h1>
+    <p id="teste">Exemplo de função sem parâmetro</p>
+    <p id="teste2"></p>
+
+    <button type="button" onclick="calculaConta();">calculaConta</button>
+
+    <script type="text/javascript">
+        // Declarando uma função
+        function calculaConta(){
+            // Declarando as variáveis
+            var texto = ' O valor do calculo é: <br>';
+            var n1 = 5;
+            var n2 = 10;
+            var soma = 0;
+            var produto = 0;
+            
+
+            soma = n1 + n2;
+            produto = n1 * n2;
+
+            // Mostrando o cálculo
+            document.getElementById('teste').innerHTML = texto + soma;
+            document.getElementById('teste2').innerHTML = produto;
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variável acumuladora</title>
+</head>
+<body>
+    <h1>Variável acumuladora</h1>
+    <p id="teste">O total de vendas foi: </p>
+
+    <script type="text/javascript">
+        // Criando variáveis
+        var cont = 1;
+        var total = 0;
+        var venda = 0;
+        var fim = 0;
+
+        // Solicitar ao usuário a quantidade de vendas do dia
+        fim = parseFloat(prompt('Digite a quantidade de vendas',''));
+
+        // Criando o laço de repetição
+        for(cont=1; cont <=fim; cont++){
+            venda = parseFloat(prompt('Digite o valor da '+ cont + 'a venda'));
+            total = total + venda;
+        }
+
+        // Mostrando o resultado
+        document.getElementById('teste').innerHTML +=total;
+    </script>
+</body>
+</html>

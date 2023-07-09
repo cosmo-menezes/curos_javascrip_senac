@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#banner #banner_img {
+	width: 100%;
+	max-height: 500px;
+    overflow: hidden;
+	margin: auto;
+}
+#banner #banner_img img {
+	height: auto;
+	width:100%;
+}
+#banner a {
+	border: solid 1px #CCC;
+	border-radius: 50%;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #000;
+}
+#banner a:hover {
+	text-decoration: none;
+	background-color: #555;
+	color: #FFF;
+}
+#banner a.ativo {
+	background-color: #555;
+	color: #FFF;
+}
+#banner #botoes {
+	position: relative;
+	top: -50px;
+	width: 130px;
+	margin: auto;
+	z-index: 100;
+}
+#banner #botoes {
+	padding-top: 10px;
+}

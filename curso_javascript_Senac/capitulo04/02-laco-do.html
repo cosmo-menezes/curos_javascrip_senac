@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço de repetição DO - while</title>
+</head>
+<body>
+    <h1>Laço de repetição DO - while</h1>
+    <p id="tabuada"></p>
+
+    <script type="text/javascript">
+        // Criando variáveis
+        var num = 5;
+        var cont = 1;
+        var resposta = '';
+
+        // Criando a tabuada
+        do{
+            resposta += num + ' X ' + cont + ' = ' + (num * cont) + ' <br> '
+            cont++;
+        }
+        while(cont <= 10);
+        /* 
+        Comparando com o FOR 
+        for(cont = 1; cont <= 10; cont++){
+            resposta += num + ' X ' + cont + ' = ' + (num * cont) + ' <br> ';
+        }
+        */
+        // Mostrando a tabuada
+        document.getElementById('tabuada').innerHTML = resposta;
+    </script>
+</body>
+</html>

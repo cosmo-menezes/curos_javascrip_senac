@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+</head>
+<body>
+    <h1>Variável do tipo objeto</h1>
+    <p id="dados">Dados do carro: </p>
+    <script type="text/javascript">
+        var meuCarro = new Object();
+        meuCarro.fabrica = 'Volkswagem';
+        meuCarro.modelo = 'Jetta';
+        meuCarro.cor = 'Azul';
+        meuCarro.ano = 2022;
+
+        document.getElementById('dados').innerHTML += meuCarro.fabrica + ' - ' + meuCarro.modelo + ' - ' + 
+        meuCarro.cor + ' - ' + meuCarro.ano;
+
+    </script>
+    
+</body>
+</html>

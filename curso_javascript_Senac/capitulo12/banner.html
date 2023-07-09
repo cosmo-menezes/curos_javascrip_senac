@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+	<div id="banner" class="banner">
+		<div id="banner_img">
+			<img src="img/foto1.jpg" alt="Banner" title="Banner">
+		</div>
+		<div id="botoes">
+			<a href="javascript:void(0);" id="banner_img_1" class="ativo" onclick="trocaBanner('0');">1</a>
+			<a href="javascript:void(0);" id="banner_img_2" onclick="trocaBanner('1');">2</a>
+			<a href="javascript:void(0);" id="banner_img_3" onclick="trocaBanner('2');">3</a>
+		</div>
+	</div>
+    
+        var img = new Array('1', '2', '3');
+        var indice = 0;
+        setInterval('trocarBanner()', 3000);
+        function trocarBanner(i){
+            if(i == 0 || i == 1 || i == 2){
+                indice = i;
+            }
+            else {
+                if(indice == img.length - 1){
+                    indice = 0;
+                }else {
+                indice++;
+            }
+            }
+        }
+        document.getElementById('banner_img_1').setAttribute('class', '');
+        document.getElementById('banner_img_2').setAttribute('class', '');
+        document.getElementById('banner_img_3').setAttribute('class', '');
+        document.getElementById('banner_img_' + img[indice]).setAttribute('class', 'ativo');
+        document.getElementById('banner_img').innerHTML = '<img src="img/foto' + img[indice] + '.jpg" alt="Banner" title="Banner">';
+    </script>
+</body>
+</html>

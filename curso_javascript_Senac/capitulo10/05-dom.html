@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de DOM</title>
+</head>
+<body>
+    <h1>Inserção de elementos usando função</h1>
+    <ul>
+        <li>Terceiro</li>
+        <li>Quarto</li>
+        <li>Quinto</li>
+    </ul>
+
+    <script type="text/javascript">
+        // Declarando a função
+        function criaElemento(tag,txt){
+            var elemento = document.createElement(tag);
+            var texto = document.createTextNode(txt);
+            elemento.appendChild(texto);
+            return elemento;
+        }
+
+        // Criando os elementos
+        var li1 = criaElemento('li', 'Primeiro');
+        var li2 = criaElemento('li', 'Segundo');
+
+        // Buscando na lista
+        var lista = document.getElementsByTagName('ul')[0];
+
+        // Buscando itens na lista
+        var itens = document.getElementsByTagName('li');
+
+        // Inserindo os  elementos
+        lista.insertBefore(li2, itens[0]);
+        lista.insertBefore(li1, itens[0]);
+
+    </script>
+</body>
+</html>

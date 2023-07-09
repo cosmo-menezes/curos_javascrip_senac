@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício extra 12</title>
+</head>
+<body>
+    <h1>Exercício extra 12</h1>
+    <p id="resultado">Seu saldo é </p>
+    <p id="mensagem"></p>
+
+    <script type="text/javascript">
+        //Criando variáveis
+        var saldo = 1500;
+        var depositar = 0;
+        var resposta = '';
+        var mensagem = '';
+
+        var operação_bancaria = '';
+
+        operação_bancaria = parseInt(prompt('Digite sua operação bancária: 1 - Sacar  2 - Depositar'));
+
+        switch(operação_bancaria){
+            case 1:
+                resposta = 'Seu saldo atual depois do saque é: ';
+                break;
+            case 2:
+                resposta = 'Seu saldo atual depois do deposito e:' ; 
+                break;
+            default:
+                resposta = 'Opção inválida! </br> Digite 1 para Sacar </br> Digite 2 para Depositar';
+
+
+        }
+        if(operação_bancaria == '1'){
+            
+            saldo +=  -100;
+            mensagem = saldo;
+
+        } else if (operação_bancaria == '2'){
+            
+            saldo +=  depositar +300;
+            mensagem = saldo;
+        }
+
+
+        document.getElementById('resultado').innerHTML = resposta;
+        document.getElementById('mensagem').innerHTML = mensagem
+
+        
+    </script>
+</body>
+</html>

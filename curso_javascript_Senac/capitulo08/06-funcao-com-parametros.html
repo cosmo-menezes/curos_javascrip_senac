@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função com parâmetros</title>
+</head>
+<body>
+    <h1>Validação de formulário</h1>
+    <form name="form" method="post" onsubmit="return VerificaForm(this);">
+        
+        <div>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="name"/>
+        </div><br>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"/>
+        </div><br>
+        <div>
+            <label for="telefone">Telefone:</label><br>
+            <input type="telefone" id="telefone" />
+        </div><br>
+        <div>
+            <label>Sexo:</label><br>
+            <input type="radio" name="radio" value="Masculino">Masculino
+            <input type="radio" name="radio" value="Feminino">Feminino
+        </div><br>
+        <div>
+            <label>Software que conhece</label><br>
+            <input type="checkbox" name="opções" value="sublime">Sublime<br>
+            <input type="checkbox" name="opções" value="brackets">Brackets<br>
+            <input type="checkbox" name="opções" value="dreamveaver">Dreamveaver
+        </div><br>
+        <div>
+            <label>Navegador preferido:</label><br>
+            <select>
+                <option>Selecione</option>
+                <option>Opção1</option>
+                <option>Opção2</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="msg">Comentário:</label><br>
+            <textarea id="msg" name="comentario"></textarea>
+        </div><br>
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+    <script src="06-funcao-com-parametros.js"></script>
+</body>
+</html>
